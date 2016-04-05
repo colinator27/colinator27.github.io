@@ -1,10 +1,10 @@
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color: #000;  /*Sets the text hover color on navbar*/
+color: #555555;  /*Sets the text hover color on navbar*/
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
  a:hover, .navbar-default .navbar-nav > .active > a:focus {
-color: white; /*BACKGROUND color for active*/
+color: green; /*BACKGROUND color for active*/
 background-color: #030033;
 }
 
@@ -28,5 +28,5 @@ background-color: #030033;
 
 
   .navbar-default .navbar-nav > li > a {
-   color: white; /*Change active text color here*/
+   color: black; /*Change active text color here*/
     }
