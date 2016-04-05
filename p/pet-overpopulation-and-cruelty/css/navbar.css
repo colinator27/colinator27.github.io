@@ -11,6 +11,7 @@ background-color: #030033;
   .navbar-default {
     background-color: #ee28ee;
     border-color: green;
+    color: green;
 }
 
   .dropdown-menu > li > a:hover,
