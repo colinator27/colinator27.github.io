@@ -92,7 +92,11 @@
     </center>
   </div> 
   <script type="text/javascript">
-    var audio = new Audio('http://i.gjcdn.net/data/games/2/226/136226/soundtracks/default/success.mp3');
+    var audio = new Audio('http://i.gjcdn.net/data/games/1/69/113569/soundtracks/default/web.mp3');
+    audio.addEventListener('ended', function() {
+      this.currentTime = 0;
+      this.play();
+    }, false);
     audio.play();
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
