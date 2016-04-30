@@ -9,10 +9,20 @@ description: Find my content here! Five Nights at Fido's, MNaF, Project Dreamt, 
   <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
   <style type="text/css">
   h1 {
     font-family: 'Slabo 27px', serif;
+  }
+  p {
+    font-family: 'Lora', serif;
+    font-size: 115%;
+  }
+  #custom_font {
+    font-family: 'Droid Serif', serif;
+    font-size: 150%;
   }
   </style>
   <script type="text/javascript">
@@ -21,11 +31,11 @@ description: Find my content here! Five Nights at Fido's, MNaF, Project Dreamt, 
       window.location.protocol = "https";
   </script>
   <title>
-    {% if page.title %}
-      {{ page.title }}
-    {% else %}
-      colinator27
-    {% endif %}
+  {% if page.title %}
+  {{ page.title }}
+  {% else %}
+  colinator27
+  {% endif %}
   </title>
   {% if page.description %}
     <meta name="description" content="{{ page.description}}" />
@@ -83,6 +93,9 @@ description: Find my content here! Five Nights at Fido's, MNaF, Project Dreamt, 
 <div class="col-xs-12">
   <center>
     <h1>COLINATOR27</h1>
+    <br>
+    <p>A website with all of my projects and games in one place!</p>
+    <a id="custom_font" href="">Info/Contact</a>
     </center>
   </div>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
