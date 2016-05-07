@@ -34,10 +34,13 @@
     var link = GetURLParameter('link');
     if(link != undefined) {
       if(ValidURL(link)){
-        if(link.substring(0,4) == "http"){
+        if(link.substring(0,7) == "http://"){
           window.location.replace(link);
-        } else if(link.substring(0,5) == "https"){
+        } else if(link.substring(0,8) == "https://"){
           window.location.replace(link);
+        } else {
+          var flink = "http://" + link;
+          window.location.replace(flink);
         }
       } else {
         document.body.innerHTML += "<p>Error: Invalid URL</p>";
