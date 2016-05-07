@@ -15,6 +15,7 @@
     if(!pattern.test(str)) {
       return false;
     } else {
+      alert(str);
       if(str.substring(0,4) == "http"){
         return true;
       } else if(str.substring(0,5) == "https"){
