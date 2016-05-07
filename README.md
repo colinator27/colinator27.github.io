@@ -8,6 +8,8 @@ Enjoy!
 To make a link easier to navigate to, enter the following web address into your browsers navigation bar:
 "colinator27.github.io/r/" Then, add something like this: "?l=fnafi" This will redirect you to Five Nights at Fido's.
 
-##### Codes:
+These types of things added to the end of the URLs are known as URL parameters. Basically, the URL sets a value in the code.
+
+#### Codes to use:
 
 fnafi, pd, sec, mnaf, utfh, mus, ab
