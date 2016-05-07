@@ -2,6 +2,11 @@
 <html>
 <head>
   <title>Redirecting...</title>
+  <script type="text/javascript">
+    var host = "colinator27.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+  </script>
 </head>
 <body>
   <p>Redirecting...</p>
@@ -20,8 +25,10 @@
     }
     }
     var link = GetURLParameter('l');
-    if(link == "fo"){
+    if(link == "fnafi"){
       window.location.replace("https://colinator27.github.io/projects/five-nights-at-fidos/");
+    } else if(link == "pd") {
+      window.location.replace("https://colinator27.github.io/projects/project-dreamt/");
     }
   </script>
 </body>
