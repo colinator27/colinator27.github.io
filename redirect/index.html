@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redirecting...</title>
+  <title id="header">Redirecting...</title>
 </head>
 <body>
   <script type="text/javascript">
@@ -19,7 +19,12 @@
     }
     }
     var link = GetURLParameter('link');
-    window.location.replace(link);
+    if(link != undefined) {
+      window.location.replace(link);
+    } else {
+      document.body.innerHTML += "<p>Error: No link</p>";
+      document.getElementById("header").innerHTML = "Error";
+    }
   </script>
 </body>
 </html>
