@@ -9,7 +9,7 @@
   </script>
 </head>
 <body>
-  <p>Redirecting...</p>
+  <p id="message">Redirecting...</p>
   <script>
     function GetURLParameter(sParam)
     {
@@ -25,10 +25,19 @@
     }
     }
     var link = GetURLParameter('l');
-    if(link == "fnafi"){
+    if(link == "fnafi") {
       window.location.replace("https://colinator27.github.io/projects/five-nights-at-fidos/");
     } else if(link == "pd") {
       window.location.replace("https://colinator27.github.io/projects/project-dreamt/");
+    } else if(link == "sec") {
+      window.location.replace("https://colinator27.github.io/projects/scratch-extension-creator/");
+    } else if(link == "mnaf") {
+      window.location.replace("https://colinator27.github.io/projects/massive-nights-at-freddys/");
+    } else if(link == "utfh") {
+      window.location.replace("https://colinator27.github.io/projects/undertale-the-fourth-human/");
+    } else {
+      var msgElem = document.getElementById("message");
+      msgElem.innerHTML = "Error: Invalid redirect code. Codes are: (fnafi, pd, sec, mnaf, utfh)";
     }
   </script>
 </body>
