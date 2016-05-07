@@ -15,13 +15,7 @@
     if(!pattern.test(str)) {
       return false;
     } else {
-      if(link.substring(0,4) == "http"){
-        return true;
-      } else if(link.substring(0,5) == "https"){
-        return true;
-      } else {
-        return false;
-      }
+      return true;
     }
     }
     function GetURLParameter(sParam)
@@ -40,7 +34,11 @@
     var link = GetURLParameter('link');
     if(link != undefined) {
       if(ValidURL(link)){
-      window.location.replace(link);
+        if(link.substring(0,4) == "http"){
+          window.location.replace(link);
+        } else if(link.substring(0,5) == "https"){
+          window.location.replace(link);
+        }
       } else {
         document.body.innerHTML += "<p>Error: Invalid URL</p>";
         document.getElementById("header").innerHTML = "Error";
