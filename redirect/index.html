@@ -15,7 +15,13 @@
     if(!pattern.test(str)) {
       return false;
     } else {
-      return true;
+      if(str.substring(0,4) == "http:"){
+        return true;
+      } else if(str.substring(0,4) == "https"){
+        return true;
+      } else {
+        return false;
+      }
     }
     }
     function GetURLParameter(sParam)
