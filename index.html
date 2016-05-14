@@ -5,11 +5,34 @@ description: Find my content here! Five Nights at Fido's, MNaF, Project Dreamt, 
 <!DOCTYPE html>
 <html>
 <head>
-  <div itemscope itemtype="http://schema.org/WebPage">
-  <a itemprop="url" href="https://colinator27.github.io/"><div itemprop="name"><strong>colinator27</strong></div>
-  </a>
-  <div itemprop="description">Here you can find games that I've created as well as projects that I'm working on.</div>
-  </div>
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://colinator27.github.io/",
+      "name": "Home"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://colinator27.github.io/about/",
+      "name": "About"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+      "@id": "https://colinator27.github.io/music",
+      "name": "Music"
+    }
+  }]
+}
+</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
