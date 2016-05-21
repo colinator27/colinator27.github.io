@@ -1,3 +1,6 @@
+---
+description: Find the credits for this website here! Also, check out other content on the website!
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +30,9 @@
     font-size: 150%;
   }
   </style>
-  <!--link rel="icon" type="image/vnd.microsoft.icon" href="http://colinator27.github.io/favicon.ico">
-  <link rel="shortcut icon" href="http://colinator27.github.io/favicon.ico"-->
+  {% if page.description %}
+    <meta name="description" content="{{ page.description}}" />
+  {% endif %}
 </head>
 <body>
   <nav class="navbar navbar-default">
