@@ -99,7 +99,7 @@
   function hashChange(){
     if(location.hash == "#asg") {
       var htmlElement = document.getElementById("hash");
-      htmlElement.innerHTML = "<div class=\"col-xs-12\"><p id=\"custom_font\">The Small Giant</p><p>A game where there is a small giant- yes. The giant also gets picked on by other normal giants. It is a short game with only a couple of minutes of gameplay.</p></div>";
+      htmlElement.innerHTML = "<div class=\"col-xs-12\"><p id=\"custom_font\" style=\"text-align: center;\">The Small Giant</p><p>A game where there is a small giant- yes. The giant also gets picked on by other normal giants. It is a short game with only a couple of minutes of gameplay.</p></div>";
     }
   }
   document.getElementsByTagName("BODY")[0].onhashchange = function() {hashChange()};
