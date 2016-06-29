@@ -1,0 +1,10 @@
+@font-face {
+      font-family: variable;
+      src: url(variable.woff2);
+}
+* {
+  font-family: variable;
+  color: white;
+  background-color: black;
+  line-height: 1.0;
+}
