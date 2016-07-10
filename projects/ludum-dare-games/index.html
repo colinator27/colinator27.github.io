@@ -99,6 +99,12 @@
       <p>A game where there is a small giant- yes. The giant also gets picked on by other normal giants. It is a short game with only a couple of minutes of gameplay.</p>
       <p><a href="#asg" onclick="location.reload();">More info</a></p>
     </div>
+    <div class="col-sm-6">
+      <h1 style="visibility:none;"> </h1>
+      <p id="custom_font">Young Activities</p>
+      <p>A Mini-LD submission where the theme was Youth. It's basically some things that a young child may do in their young life.</p>
+      <p><a href="#ya" onclick="location.reload();">More info</a></p>
+    </div>
   </div>
 </div>
 <script type="text/javascript">
@@ -106,6 +112,10 @@
     if(location.hash == "#asg") {
       var htmlElement = document.getElementById("hash");
       htmlElement.innerHTML = "<div class=\"col-sm-3\"></div><div class=\"col-sm-6\"><h1 style=\"visibility:none;\"> </h1><center><p id=\"custom_font\" style=\"text-align: center;\">The Small Giant</p><p>A game where there is a small giant- yes. The giant also gets picked on by other normal giants. It is a short game with only a couple of minutes of gameplay.</p><p><a href=\"#\" onclick=\"location.reload();\">Back</a></p><h1 style=\"visibility:none;\"> </h1><a id=\"custom_font\" target=\"_blank\" href=\"https://colinator27.github.io/redirect/?link=http://gamejolt.com/games/a-small-giant-ld-34/113551/\">View on GameJolt</a></center></div><div class=\"col-sm-3\"></div>";
+    }
+    if(location.hash == "#ya") {
+      var htmlElement = document.getElementById("hash");
+      htmlElement.innerHTML = "<div class=\"col-sm-3\"></div><div class=\"col-sm-6\"><h1 style=\"visibility:none;\"> </h1><center><p id=\"custom_font\" style=\"text-align: center;\">Young Activities</p><p>A Mini-LD submission where the theme was Youth. It's basically some things that a young child may do in their young life.</p><p><a href=\"#\" onclick=\"location.reload();\">Back</a></p><h1 style=\"visibility:none;\"> </h1><a id=\"custom_font\" target=\"_blank\" href=\"https://colinator27.github.io/redirect/?link=http://gamejolt.com/games/young-activities-minild-65/127590\">View on GameJolt</a></center></div><div class=\"col-sm-3\"></div>";
     }
   }
   document.getElementsByTagName("BODY")[0].onhashchange = function() {hashChange()};
