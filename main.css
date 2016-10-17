@@ -1,0 +1,27 @@
+  div.pageOverlay {
+    opacity:1;
+    filter: alpha(opacity=20);
+    background-color:#000; 
+    width:100%; 
+    height:100%; 
+    z-index:10;
+    top:0; 
+    left:0; 
+    position:fixed; 
+  }
+  h1 {
+    font-family: 'Slabo 27px', serif;
+  }
+  p {
+    font-family: 'Lora', serif;
+    font-size: 115%;
+  }
+  #custom_font {
+    font-family: 'Droid Serif', serif;
+    font-size: 150%;
+  }
+  .navbar-brand {
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+    font-size: 115%;
+  }
