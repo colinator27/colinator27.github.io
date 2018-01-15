@@ -2,43 +2,35 @@
 <html>
 <head>
   <title>Redirecting...</title>
-  <script type="text/javascript">
-    var host = "colinator27.github.io";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-      window.location.protocol = "https";
-  </script>
 </head>
 <body>
   <p id="message">Redirecting...</p>
   <script type="text/javascript">
-    function GetURLParameter(sParam)
-    {
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
+    function getUrlParameter(param){
+		var pageUrl = window.location.search.substring(1);
+		var urlVariables = pageUrl.split('&');
+		for(var i = 0; i < urlVariables.length; i++){
+			var parameterName = urlVariables[i].split('=');
+			if(parameterName[0] == param){
+				return parameterName[1];
+			}
+		}
     }
-    }
-    var link = GetURLParameter('l');
-    if(link == "pd") {
-      window.location.replace("https://colinator27.github.io/projects/project-dreamt/");
-    } else if(link == "sec") {
-      window.location.replace("https://colinator27.github.io/projects/scratch-extension-creator/");
-    } else if (link == "mus") {
-      window.location.replace("https://colinator27.github.io/music/");
-    } else if (link == "ab") {
-      window.location.replace("https://colinator27.github.io/about/");
-    } else if (link == "gj") {
-      window.location.replace("http://gamejolt.com/@colinator27");
-    } else {
-      var msgElem = document.getElementById("message");
-      msgElem.innerHTML = "Error: Invalid redirect code. ";
-    }
+    var link = getUrlParameter('l');
+	var dest;
+	switch(link){
+		case "gj":
+			dest = "https://gamejolt.com/@colinator27";
+			break;
+		default:
+			dest = "";
+			break;
+	}
+	if(dest === ""){
+		document.getElementById("message").innerHTML = "Invalid redirect code.";
+	} else {
+		window.location.replace(dest);
+	}
   </script>
 </body>
 </html>
