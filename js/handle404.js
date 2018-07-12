@@ -82,7 +82,7 @@ $(document).ready(function(){
         <p>Loading...</p>
       </div>
     </div>`;
-      processPageData(data, path);
+      processPageData(data.responseJSON, path);
     },
     fail: function(xhr, textStatus, errorThrown){
       // Page not found, throw 404 error for real
