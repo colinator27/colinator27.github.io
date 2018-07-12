@@ -48,7 +48,7 @@ $(document).ready(function(){
     </div>`;
       processPageData(data, path);
     },
-    fail: function(xhr, textStatus, errorThrown){
+    error: function(xhr, textStatus, errorThrown){
       // Page not found, throw 404 error for real
       document.title = 'colinator27 - 404';
       document.body.innerHTML = `\

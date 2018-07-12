@@ -68,7 +68,7 @@ function loadPage(path){
 		success: function(data){
 			processPageData(data, path);
 		},
-	    fail: function(xhr, textStatus, errorThrown){
+	    error: function(xhr, textStatus, errorThrown){
 	    	console.error('Failed to load page with name "' + name + '"');
 	    }
 	});
