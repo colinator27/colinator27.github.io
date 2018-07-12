@@ -41,8 +41,8 @@ $(document).ready(function(){
         .pop();
 
   // In case the user is routed to index.html, or another page, for some reason...
-  if (pageName.endsWith('.html')){
-    pageName.replace('.html', '');
+  if (name.endsWith('.html')){
+    name.replace('.html', '');
   }
 
   // Alternative loadPath implementation
