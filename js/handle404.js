@@ -43,7 +43,7 @@ function callFail(){
   document.title = 'colinator27 - 404';
   document.body.innerHTML = `\
 <center>
-  <h1 class="dfont fullsize">Wrong page!</h1>
+  <h1 class="dfont sdouble">Wrong page!</h1>
   <br>
   <br>
   <p class="dfont">Click <a href="https://colinator27.github.io/">here</a> to go back to the homepage.</p>
@@ -64,7 +64,7 @@ $(document).ready(function(){
   // Alternative loadPath implementation
   var path = '/' + name;
   if (name == 'index')
-    path = '';
+    path = '/';
 
   $.ajax({
     url: '/page_data/' + name + '.json',

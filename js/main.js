@@ -11,7 +11,7 @@ function processPageData(response, urlPath){
 function loadPage(name){
 	var path = '/' + name;
 	if (name == 'index')
-		path = '';
+		path = '/';
 
 	$.ajax({
 		url: '/page_data/' + name + '.json',
