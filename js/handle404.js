@@ -35,7 +35,7 @@ if (!Array.prototype.filter){
 }
 
 $(document).ready(function(){
-  var pageName = window.location.pathname
+  var name = window.location.pathname
         .split("/")
         .filter(function (c) { return c.length;})
         .pop();
