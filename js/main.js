@@ -3,9 +3,9 @@ function processPageData(response, urlPath){
     if (response.title == '')
     	title = 'colinator27';
     
-    document.getElementById('content-area').innerHTML = response.html;
+    document.getElementById('content-area').innerHTML = response.content;
     document.title = title;
-    window.history.pushState({'content': response.html, 'title': title}, '', urlPath);
+    window.history.pushState({'content': response.content, 'title': title}, '', urlPath);
 }
 
 function loadPage(name){
