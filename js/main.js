@@ -55,6 +55,9 @@ function processPageData(response, urlPath){
 }
 
 function loadPage(path){
+	if (path == window.location.hostname)
+		path = '/';
+
 	var name = path.replace('/', '');
 	if (name == '')
 		name = 'index';
