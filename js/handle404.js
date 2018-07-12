@@ -51,7 +51,7 @@ $(document).ready(function(){
     path = '';
 
   $.ajax({
-    url: '/page_data/' + name,
+    url: '/page_data/' + name + '.json',
     dataType: 'application/json',
     complete: function(data){
       // Load the default index.html stuff, that hasn't yet been loaded

@@ -14,7 +14,7 @@ function loadPage(name){
 		path = '';
 
 	$.ajax({
-		url: '/page_data/' + name,
+		url: '/page_data/' + name + '.json',
 		dataType: 'application/json',
 		complete: function(data){
 			processPageData(data, path);
