@@ -65,11 +65,7 @@ function loadPage(path){
 	$.ajax({
 		url: '/page_data/' + name + '.json',
 		dataType: 'json',
-		complete: function(data){
-		    if (data.statusText != "success"){
-		    	console.error('Failed to load page with name "' + name + '"');
-		    	return;
-		    }
+		success: function(data){
 			processPageData(data.responseJSON, path);
 		},
 	    fail: function(xhr, textStatus, errorThrown){

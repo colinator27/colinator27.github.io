@@ -1,20 +1,3 @@
-var _failCalledYet = false;
-function callFail(){
-  if (_failCalledYet) return;
-  _failCalledYet = true;
-
-  // Page not found, throw 404 error for real
-  document.title = 'colinator27 - 404';
-  document.body.innerHTML = `\
-<center>
-  <div class="vb"></div>
-  <h1 class="dfont sdouble">Wrong page!</h1>
-  <br>
-  <br>
-  <p class="dfont">Click <a href="https://colinator27.github.io/" style="color:#a00;">here</a> to go back to the homepage.</p>
-</center>`;
-}
-
 $(document).ready(function(){
   var name = window.location.pathname
         .split("/")
@@ -34,10 +17,7 @@ $(document).ready(function(){
   $.ajax({
     url: '/page_data/' + name + '.json',
     dataType: 'json',
-    complete: function(data){
-      if (data.statusText != "success")
-        return callFail();
-
+    success: function(data){
       // Load the default index.html stuff, that hasn't yet been loaded
       document.body.innerHTML = `\
     <div id="verytop">
@@ -69,7 +49,16 @@ $(document).ready(function(){
       processPageData(data.responseJSON, path);
     },
     fail: function(xhr, textStatus, errorThrown){
-      callFail();
+      // Page not found, throw 404 error for real
+      document.title = 'colinator27 - 404';
+      document.body.innerHTML = `\
+    <center>
+      <div class="vb"></div>
+      <h1 class="dfont sdouble">Wrong page!</h1>
+      <br>
+      <br>
+      <p class="dfont">Click <a href="https://colinator27.github.io/" style="color:#a00;">here</a> to go back to the homepage.</p>
+    </center>`;
     }
   });
 });
