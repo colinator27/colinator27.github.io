@@ -54,6 +54,9 @@ $(document).ready(function(){
     url: '/page_data/' + name + '.json',
     dataType: 'json',
     complete: function(data){
+      if (data.statusText != "success")
+        return;
+
       // Load the default index.html stuff, that hasn't yet been loaded
       document.body.innerHTML = `\
     <div id="verytop">

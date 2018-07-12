@@ -17,6 +17,8 @@ function loadPage(name){
 		url: '/page_data/' + name + '.json',
 		dataType: 'json',
 		complete: function(data){
+		    if (data.statusText != "success")
+		    	return;
 			processPageData(data.responseJSON, path);
 		},
 	    fail: function(xhr, textStatus, errorThrown){
