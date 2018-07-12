@@ -43,10 +43,10 @@ function callFail(){
   document.title = 'colinator27 - 404';
   document.body.innerHTML = `\
 <center>
-  <h1>Wrong page!</h1>
+  <h1 class="dfont fullsize">Wrong page!</h1>
   <br>
   <br>
-  <p>Click <a href="https://colinator27.github.io/">here</a> to go back to the homepage.</p>
+  <p class="dfont">Click <a href="https://colinator27.github.io/">here</a> to go back to the homepage.</p>
 </center>`;
 }
 
