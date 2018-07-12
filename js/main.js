@@ -66,7 +66,7 @@ function loadPage(path){
 		url: '/page_data/' + name + '.json',
 		dataType: 'json',
 		success: function(data){
-			processPageData(data.responseJSON, path);
+			processPageData(data, path);
 		},
 	    fail: function(xhr, textStatus, errorThrown){
 	    	console.error('Failed to load page with name "' + name + '"');

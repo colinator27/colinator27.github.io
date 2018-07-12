@@ -46,7 +46,7 @@ $(document).ready(function(){
         <p>Loading...</p>
       </div>
     </div>`;
-      processPageData(data.responseJSON, path);
+      processPageData(data, path);
     },
     fail: function(xhr, textStatus, errorThrown){
       // Page not found, throw 404 error for real
