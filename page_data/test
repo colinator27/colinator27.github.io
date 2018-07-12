@@ -1,0 +1,4 @@
+{
+    "title": "Test",
+    "content": "<p>This is just a test of the new site navigation system</p>\n<a href=\"#\" onclick=\"loadPage('index')\">Go back, maybe?</a>"
+}

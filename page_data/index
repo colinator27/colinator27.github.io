@@ -1,0 +1,4 @@
+{
+    "title": "",
+    "content": "<a href=\"#\" onclick=\"loadPage('test')\">Visit test, maybe?</a><div class=\"stararea\"><div class=\"animd\"><img class=\"animd-img\" src=\"./res/star0.png\"></div><div class=\"animd\"><img class=\"animd-img\" src=\"./res/star0.png\"></div><div class=\"animd\"><img class=\"animd-img\" src=\"./res/star0.png\"></div><div class=\"animd\"><img class=\"animd-img\" src=\"./res/star0.png\"></div><div class=\"animd\"><img class=\"animd-img\" src=\"./res/star0.png\"></div></div><script src=\"./js/fp.js\" type=\"text/javascript\"></script>"
+}
