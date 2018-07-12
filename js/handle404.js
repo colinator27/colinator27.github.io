@@ -34,6 +34,22 @@ if (!Array.prototype.filter){
   };
 }
 
+var _failCalledYet = false;
+function callFail(){
+  if (_failCalledYet) return;
+  _failCalledYet = true;
+
+  // Page not found, throw 404 error for real
+  document.title = 'colinator27 - 404';
+  document.body.innerHTML = `\
+<center>
+  <h1>Wrong page!</h1>
+  <br>
+  <br>
+  <p>Click <a href="https://colinator27.github.io/">here</a> to go back to the homepage.</p>
+</center>`;
+}
+
 $(document).ready(function(){
   var name = window.location.pathname
         .split("/")
@@ -55,7 +71,7 @@ $(document).ready(function(){
     dataType: 'json',
     complete: function(data){
       if (data.statusText != "success")
-        return;
+        return callFail();
 
       // Load the default index.html stuff, that hasn't yet been loaded
       document.body.innerHTML = `\
@@ -88,15 +104,7 @@ $(document).ready(function(){
       processPageData(data.responseJSON, path);
     },
     fail: function(xhr, textStatus, errorThrown){
-      // Page not found, throw 404 error for real
-      document.title = 'colinator27 - 404';
-      document.body.innerHTML = `\
-    <center>
-      <h1>Wrong page!</h1>
-      <br>
-      <br>
-      <p>Click <a href="https://colinator27.github.io/">here</a> to go back to the homepage.</p>
-    </center>`;
+      callFail();
     }
   });
 });
