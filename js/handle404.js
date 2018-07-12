@@ -46,7 +46,7 @@ function callFail(){
   <h1 class="dfont sdouble">Wrong page!</h1>
   <br>
   <br>
-  <p class="dfont">Click <a href="https://colinator27.github.io/">here</a> to go back to the homepage.</p>
+  <p class="dfont">Click <a href="https://colinator27.github.io/" style="color:#800;">here</a> to go back to the homepage.</p>
 </center>`;
 }
 
