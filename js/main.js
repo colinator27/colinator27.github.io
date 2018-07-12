@@ -1,3 +1,10 @@
+addEventListener('click', function (ev) {
+    if (ev.target.classList.contains('smoothlink')) {
+        ev.preventDefault();
+        loadPage(ev.target.href);
+    }   
+});
+
 function processPageData(response, urlPath){
     var title = 'colinator27 - ' + response.title;
     if (response.title == '')
@@ -8,10 +15,10 @@ function processPageData(response, urlPath){
     window.history.pushState({'content': response.content, 'title': title}, '', urlPath);
 }
 
-function loadPage(name){
-	var path = '/' + name;
-	if (name == 'index')
-		path = '/';
+function loadPage(path){
+	var name = path.replace('/', '');
+	if (name == '')
+		name = 'index';
 
 	$.ajax({
 		url: '/page_data/' + name + '.json',

@@ -1,4 +1,4 @@
 {
     "title": "",
-    "content": "<a href=\"#\" onclick=\"loadPage('test')\">Visit test, maybe?</a>"
+    "content": "<a href=\"/test\" class=\"dfont smoothlink\">Visit test, maybe?</a>"
 }
