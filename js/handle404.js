@@ -30,32 +30,37 @@ $(document).ready(function(){
     success: function(data){
       // Load the default index.html stuff, that hasn't yet been loaded
       document.body.innerHTML = '\
-    <div id="verytop">\
-      <div class="vb"></div>\
-      <p class="tc dfont sdouble">colinator27</p>\
-    </div>\
-    <div class="navbar">\
-      <div class="container">\
-        <div class="col-sm-12 wline"></div>\
-        <div class="col-sm-3 fullsize">\
-          <a class="tc dfont fullsize" href="https://gamejolt.com/@colinator27">GAMEJOLT</a>\
-        </div>\
-        <div class="col-sm-3 fullsize">\
-          <a class="tc dfont fullsize" href="https://github.com/colinator27">GITHUB</a>\
-        </div>\
-        <div class="col-sm-3 fullsize">\
-          <a class="tc dfont fullsize" href="https://www.youtube.com/user/colinator27/">YOUTUBE</a>\
-        </div>\
-        <div class="col-sm-3 fullsize">\
-          <a class="tc dfont fullsize" href="https://www.reddit.com/user/colinator27/">REDDIT</a>\
+    <header role="banner">\
+      <div id="verytop">\
+        <div class="vb"></div>\
+        <p class="tc dfont sdouble">colinator27</p>\
+      </div>\
+      <div class="navbar">\
+        <div class="container">\
+          <div class="col-sm-12 wline"></div>\
+          <div class="col-sm-3 fullsize">\
+            <a class="tc dfont fullsize" href="https://gamejolt.com/@colinator27">GAMEJOLT</a>\
+          </div>\
+          <div class="col-sm-3 fullsize">\
+            <a class="tc dfont fullsize" href="https://github.com/colinator27">GITHUB</a>\
+          </div>\
+          <div class="col-sm-3 fullsize">\
+            <a class="tc dfont fullsize" href="https://www.youtube.com/user/colinator27/">YOUTUBE</a>\
+          </div>\
+          <div class="col-sm-3 fullsize">\
+            <a class="tc dfont fullsize" href="https://www.reddit.com/user/colinator27/">REDDIT</a>\
+          </div>\
         </div>\
       </div>\
-    </div>\
+    </header>\
     <div class="container">\
-      <div id="content-area">\
-        <p>Loading...</p>\
-      </div>\
-    </div>';
+      <main tabindex="-1">\
+        <div id="content-area">\
+          <p>Loading...</p>\
+        </div>\
+      </main>\
+    </div>\
+    <script src="./js/main.js" type="text/javascript"></script>';
       processPageData(data, path);
     },
     error: function(xhr, textStatus, errorThrown){

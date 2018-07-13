@@ -1,0 +1,11 @@
+{
+    "name": "colinator27",
+    "short_name": "colinator27",
+    "start_url": ".",
+    "display": "browser",
+    "background_color": "#000",
+    "description": "A website containing some information about myself, as well as various other pages.",
+    "lang": "en-US",
+    "orientation": "any",
+    "theme_color": "#9E0700"
+}

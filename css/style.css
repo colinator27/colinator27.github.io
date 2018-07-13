@@ -1,5 +1,6 @@
 @font-face {
 	font-family: 'Dreamt';
+	font-display: swap;
 	src: url('/res/Dreamt.eot');
 	src: url('/res/Dreamt.eot?#iefix') format('embedded-opentype'),
 		 url('/res/Dreamt.woff') format('woff'),
