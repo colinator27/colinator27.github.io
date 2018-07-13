@@ -10,7 +10,7 @@ if (!String.prototype.endsWith) {
 
 $(document).ready(function(){
   var name = window.location.pathname
-        .split("/")
+        .split('/')
         .filter(function (c) { return c.length;})
         .pop();
 
