@@ -38,7 +38,7 @@ addEventListener('click', function (ev) {
     if (ev.target.classList.contains('smoothlink')) {
         ev.preventDefault();
         loadPage(ev.target.href
-	        .split("/")
+	        .split('/')
 	        .filter(function (c) { return c.length;})
 	        .pop());
     }   
@@ -49,11 +49,11 @@ function processPageData(response, urlPath){
     if (response.title == '')
     	title = 'colinator27';
     
-    $('#content-area').fadeOut(100, "linear", function(){
+    $('#content-area').fadeOut(100, 'linear', function(){
 	    document.getElementById('content-area').innerHTML = response.content;
 	    document.title = title;
 	    window.history.pushState({'content': response.content, 'title': title}, '', urlPath);
-	    $('#content-area').fadeIn(100, "linear", function(){
+	    $('#content-area').fadeIn(100, 'linear', function(){
 	    	$('#content-area').show();
 	    });
     });
