@@ -49,9 +49,14 @@ function processPageData(response, urlPath){
     if (response.title == '')
     	title = 'colinator27';
     
-    document.getElementById('content-area').innerHTML = response.content;
-    document.title = title;
-    window.history.pushState({'content': response.content, 'title': title}, '', urlPath);
+    $('#content-area').fadeOut(200, "linear", function(){
+	    document.getElementById('content-area').innerHTML = response.content;
+	    document.title = title;
+	    window.history.pushState({'content': response.content, 'title': title}, '', urlPath);
+	    $('#content-area').fadeIn(200, "linear", function(){
+	    	$('#content-area').show();
+	    });
+    });
 }
 
 function loadPage(path){
