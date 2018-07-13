@@ -49,11 +49,11 @@ function processPageData(response, urlPath){
     if (response.title == '')
     	title = 'colinator27';
     
-    $('#content-area').fadeOut(200, "linear", function(){
+    $('#content-area').fadeOut(100, "linear", function(){
 	    document.getElementById('content-area').innerHTML = response.content;
 	    document.title = title;
 	    window.history.pushState({'content': response.content, 'title': title}, '', urlPath);
-	    $('#content-area').fadeIn(200, "linear", function(){
+	    $('#content-area').fadeIn(100, "linear", function(){
 	    	$('#content-area').show();
 	    });
     });
