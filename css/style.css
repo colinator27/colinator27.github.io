@@ -99,17 +99,27 @@
 .animd-img {
 	position: absolute;
 }
-.stararea {
-}
 
 html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
 	background-color: #000;
+	margin: 0 0 1.5em !important;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1.5em;
+	width: 100%;
+	overflow: hidden;
 }
 
 a {
