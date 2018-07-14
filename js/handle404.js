@@ -61,7 +61,7 @@ $(document).ready(function(){
       </main>\
     </div>\
     <footer role="contentinfo">\
-      <p class="dfont" style="color:#999;">Copyright © 2018 colinator27</p>\
+      <p class="dfont center" style="color:#999;">Copyright © 2018 colinator27</p>\
     </footer>\
     <script src="./js/main.js" type="text/javascript"></script>';
       processPageData(data, path);
