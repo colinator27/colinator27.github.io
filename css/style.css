@@ -114,13 +114,12 @@ html, body {
 
 body {
 	background-color: #000;
-	margin: 0 0 1.5em !important;
 }
 
 footer {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 0.5em;
 	height: 2em;
 	width: 100%;
 	overflow: hidden;
