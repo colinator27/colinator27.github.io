@@ -1,4 +1,0 @@
-﻿NOTICE:
-
-This file has been replaced with "strings-fixed.txt".
-Please use that instead.

@@ -1,107 +1,45 @@
 @font-face {
 	font-family: 'Dreamt';
 	font-display: swap;
-	src: url('/res/Dreamt.eot');
-	src: url('/res/Dreamt.eot?#iefix') format('embedded-opentype'),
-		 url('/res/Dreamt.woff') format('woff'),
-		 url('/res/Dreamt.ttf') format('truetype');
+	src: url('../res/Dreamt.eot');
+	src: url('../res/Dreamt.eot?#iefix') format('embedded-opentype'),
+		 url('../res/Dreamt.woff') format('woff'),
+		 url('../res/Dreamt.ttf') format('truetype');
 }
 
-.effectFadeIn {
-	-webkit-animation: fadein 2s forwards;
-    -moz-animation: fadein 2s forwards;
-    -ms-animation: fadein 2s forwards;
-    -o-animation: fadein 2s forwards;
-    animation: fadein 2s forwards;
+* {
+	font-family: 'Dreamt';
+	font-size: 24px;
+	color: #fff;
+	line-height: 32px;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.effectAnimDelay1 {
-	animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-}
-.effectAnimDelay2 {
-	animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-}
-.effectHideBegin {
-	opacity: 0;
-}
-
-#verytop {
-	margin-bottom: 1rem;
-}
-
-.vb {
-	padding-bottom: 20px;
+h1 {
+	padding-top: 0.2em;
+	padding-bottom: 0;
+	margin-bottom: 0em;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 .tc {
 	text-align: center;
 }
 
-.dfont {
-	font-family: 'Dreamt';
-	font-size: 24px;
-	color: #fff;
+hr { 
+	background-color: #aaa; 
+	width: 100%; 
+	height: 2px; 
+	border: 0; 
+	opacity: 1;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
-.shalf {
-	font-size: 12px !important;
-}
-
-.squarter {
-	font-size: 6px !important;
-}
-
-.sdouble {
-	font-size: 48px !important;
-}
-
-.wline {
-	height: 2px;
-	width: 100%;
-	background-color: #909090;
-	margin-bottom: 12px;
-}
-
-.fullsize {
-	font-size: 1.4em;
+.external-link {
 	text-align: center;
-}
-
-.center {
-	text-align: center;
-}
-
-.animd {
-	display: inline-block;
-	position: absolute;
-	-webkit-transition: all 4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	transition: all 4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-.animd-img {
-	position: absolute;
+	display: block;
+	font-size: 1.25em;
 }
 
 html, body {
@@ -113,21 +51,96 @@ html, body {
 }
 
 body {
-	background-color: #000;
-}
-
-footer {
-	position: absolute;
-	left: 0;
-	bottom: 0.5em;
-	height: 2em;
-	width: 100%;
-	overflow: hidden;
+	background-color: #700000;
+	background-image: linear-gradient(to right, #9E0700 0%, #700000 10%, #700000 90%, #9E0700 100%);
 }
 
 a {
 	color: #fff;
+	font-size: inherit;
 }
 a:hover {
-	color: #f30;
+	color: #FF4C3F;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+#content-area {
+	height: 100%;
+	margin-top: 0;
+	padding-top: 1em;
+	height: 100%;
+}
+
+.content-section {
+	margin-top: 3em;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.standalone-container {
+	margin-top: 1em;
+}
+
+.navbar {
+	padding-bottom: 0;
+}
+
+.title {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+h2 {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+.content-project {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.project-title {
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	text-decoration: none;
+	display: block;
+}
+
+.project-image {
+	display: block;
+}
+
+.project-image-container {
+	display: block;
+}
+
+li {
+	margin-top: 0em;
+	font-size: 28px;
+}
+
+.pre-list {
+	margin-bottom: 0em;
+}
+
+footer {
+	margin-top: 2em;
+	text-align: center;
+}
+
+footer > p {
+	color: #777;
 }
